@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>강원테크노파크</title>
+<link rel="icon" href="../assets-shared/img/favicon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hd">
+  <a class="logo" href="#top" aria-label="강원테크노파크 홈"><img src="../assets-shared/img/logo-navy.png" alt="강원테크노파크"></a>
+  <nav class="util" aria-label="바로가기">
+    <a href="https://mybiz.gwtp.or.kr/">입주기업종합지원</a>
+    <a href="https://eqnet.gwtp.or.kr/">강원연구장비</a>
+    <a href="https://www.bizmoney.ai/gwtp/login">지원사업 매칭</a>
+    <a href="https://www.gwtp.or.kr/gwtp/gbiz_gwtp.php">G-BIZ TP</a>
+    <span class="bar"></span>
+    <a href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub01a&keyvalue=sub01">공지사항</a>
+    <a href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub06b&keyvalue=sub06">보도자료</a>
+    <a href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub01c&keyvalue=sub01">입찰공고</a>
+    <a href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub01d&keyvalue=sub01">채용공고</a>
+  </nav>
+  <nav class="gnb" aria-label="주 메뉴">
+    <a href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub01a&keyvalue=sub01">공고안내</a>
+    <a href="https://www.gwtp.or.kr/gwtp/pageview.php?url=sub02a&keyvalue=sub02">사업안내</a>
+    <a href="https://www.gwtp.or.kr/gwtp/pageview.php?url=sub04a&keyvalue=sub04">입주안내</a>
+    <a href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub05a&keyvalue=sub05">경영공시</a>
+    <a href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub06a&keyvalue=sub06">TP NOW</a>
+    <a href="https://www.gwtp.or.kr/gwtp/pageview.php?url=sub07a&keyvalue=sub07">TP소개</a>
+  </nav>
+  <div class="hd-ic">
+    <button class="ic" type="button" aria-label="검색"><svg viewBox="0 0 35 35" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="15" cy="15" r="8"/><path d="m21 21 7 7"/></svg></button>
+    <button class="ic ham" type="button" aria-label="메뉴 열기"><svg viewBox="0 0 35 35" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M7 10h21M7 17.5h21M7 25h21"/></svg></button>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" id="hero">
+    <div class="hero-ph"><img src="../assets-shared/photo/lab2.jpg" alt="강원테크노파크 실험실의 연구원들"></div>
+    <div class="net" id="net" aria-hidden="false"><svg viewBox="0 0 1440 783" preserveAspectRatio="none" aria-hidden="true"></svg><div class="pts"></div></div>
+    <div class="hero-copy">
+      <h1>기술을 잇다.<br>기업을 키우다.<br>강원을 바꾸다.</h1>
+      <p>춘천·원주·강릉·삼척·태백·홍천, <span class="js-cities">6</span>개 시군 <span class="js-fac">15</span>곳의 시설이 하나로 이어진 강원테크노파크. 기업은 이곳에서 공간을 얻고, 연구장비를 쓰고, 지원사업으로 성장합니다.</p>
+      <a class="btn" href="#open"><span>지금 접수 중인 공고 <span class="js-live">12</span>건</span></a>
+    </div>
+    <div class="mlist" id="mList"></div>
+  </section>
+
+  <section class="story wrap" id="story">
+    <header class="sh">
+      <h2>행동하는 KEY PLAYER,<br>NEW GWTP</h2>
+      <p>새로운 미래를 위한 신성장 동력 산업을 이끌어갈 강원특별자치도! 강원테크노파크가 함께 합니다.</p>
+      <div class="arrows"><button type="button" class="arr prev" aria-label="이전 소식"><svg viewBox="0 0 45 45"><circle cx="22.5" cy="22.5" r="21.5"/><path d="M25 15l-7.5 7.5L25 30"/></svg></button><button type="button" class="arr next" aria-label="다음 소식"><svg viewBox="0 0 45 45"><circle cx="22.5" cy="22.5" r="21.5"/><path d="M20 15l7.5 7.5L20 30"/></svg></button></div>
+    </header>
+    <div class="track" id="storyTrack"></div>
+  </section>
+
+  <section class="biz wrap" id="biz">
+    <h2>주요 사업<br>7개 전략 분야</h2>
+    <div class="biz-ph"><img src="../assets-shared/photo/fab.jpg" alt="연구장비를 다루는 연구원"></div>
+    <div class="biz-tx">
+      <p>모빌리티, 수소·에너지, 바이오, 반도체, 디지털헬스·의료기기, ICT·데이터, 정보보호. 강원테크노파크는 강원특별자치도의 7개 전략 분야 기업에 사업화 자금과 장비·실증, 교육·인력, 컨설팅·테스트, 투자 연결, 박람회·판로까지 성장 단계에 맞는 지원을 잇습니다.</p>
+      <a class="ul" href="https://www.gwtp.or.kr/gwtp/pageview.php?url=sub02a&keyvalue=sub02">사업안내 전체 보기</a>
+      <a class="ul" href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub01b&keyvalue=sub01">분야별 사업공고 보기</a>
+    </div>
+  </section>
+
+  <section class="stats wrap" aria-label="숫자로 보는 강원테크노파크">
+    <div class="st"><b class="js-fac">15</b><p>입주 시설<br>(<span class="js-cities">6</span>개 시군)</p></div>
+    <div class="st"><b class="js-eq">1,143</b><p>공동활용 연구장비<br>(2026.10.28 기준)</p></div>
+    <div class="st"><b class="js-inst">29</b><p>장비 보유 기관<br>(강원연구장비 등록)</p></div>
+  </section>
+
+  <section class="open wrap" id="open">
+    <h2>접수 중인 공고</h2>
+    <div class="grid3" id="openGrid"></div>
+    <a class="ul more" href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub01b&keyvalue=sub01">접수 중 공고 <span class="js-live">12</span>건 모두 보기</a>
+  </section>
+
+  <section class="fac wrap" id="place">
+    <h2><span class="js-cities">6</span>개 시군<br>입주 시설 <span class="js-fac">15</span>곳</h2>
+    <div class="mason" id="facGrid"></div>
+  </section>
+
+  <section class="lists wrap" id="news">
+    <div class="col">
+      <h3>공지사항</h3>
+      <ul id="listNotice"></ul>
+      <a class="ul" href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub01a&keyvalue=sub01">공지사항 전체 보기</a>
+    </div>
+    <div class="col">
+      <h3>사업공고</h3>
+      <ul id="listRecruit"></ul>
+      <a class="ul" href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub01b&keyvalue=sub01">사업공고 전체 보기</a>
+    </div>
+  </section>
+</main>
+
+<section class="band">
+  <div class="band-in">
+    <h5>관련 사이트</h5>
+    <p id="bandSys"></p>
+  </div>
+</section>
+<footer class="ft-main">
+  <div class="ft-in">
+    <div class="fcol a">
+      <div class="fname">강원테크노파크</div>
+      <p>(24206) 강원특별자치도 춘천시 신북읍<br>신북로 61-10 기술혁신지원센터</p>
+      <p class="tel">대표전화 <a href="tel:033-248-5600">033-248-5600</a></p>
+    </div>
+    <div class="fcol">
+      <h2>공고안내</h2>
+      <ul>
+        <li><a href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub01a&keyvalue=sub01">공지사항</a></li>
+        <li><a href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub01b&keyvalue=sub01">사업공고</a></li>
+        <li><a href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub01c&keyvalue=sub01">입찰공고</a></li>
+        <li><a href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub01d&keyvalue=sub01">채용공고</a></li>
+        <li><a href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub06b&keyvalue=sub06">보도자료</a></li>
+      </ul>
+    </div>
+    <div class="fcol">
+      <h2>입주 시설</h2>
+      <ul id="footCities"></ul>
+    </div>
+    <div class="fcol">
+      <h2>TP소개</h2>
+      <ul>
+        <li><a href="https://www.gwtp.or.kr/gwtp/pageview.php?url=sub07c&keyvalue=sub07">비전 및 목표</a></li>
+        <li><a href="https://www.gwtp.or.kr/gwtp/pageview.php?url=sub07e&keyvalue=sub07">조직안내</a></li>
+        <li><a href="https://www.gwtp.or.kr/gwtp/bbsNew_list.php?code=sub05a&keyvalue=sub05">경영공시</a></li>
+        <li><a href="https://www.gwtp.or.kr/gwtp/pageview.php?url=sub07g&keyvalue=sub07">찾아오시는 길</a></li>
+      </ul>
+      <p class="copy">Copyright © 2026 강원테크노파크</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets-shared/base.js"></script>
+<script src="../assets-shared/notices.js"></script>
+<script src="../assets-shared/home-lists.js"></script>
+<script src="../assets-shared/facilities.js"></script>
+<script src="../assets-shared/gw-core.js"></script>
+<script src="render.js"></script>
+</body>
+</html>

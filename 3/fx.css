@@ -1,0 +1,20 @@
+
+html{scroll-behavior:smooth}
+.card{cursor:pointer}
+.card:hover{border-top-color:#7F9CC6;border-right-color:#7F9CC6;border-bottom-color:#7F9CC6}
+.card:hover h3 a,.fcard:hover h3 a,.ncard:hover h3 a{text-decoration-thickness:2px}
+.card:focus-visible,.tiles a:focus-visible,.tabs button:focus-visible{outline:3px solid #FFD964;outline-offset:2px}
+.card.open dd{white-space:normal;overflow:visible}
+.card .xtra dd{white-space:normal}
+.card .xtra{margin:-8px 0 24px}
+.card .xtra ul{list-style:none}
+.card .xtra li{position:relative;padding-left:14px}
+.card .xtra li::before{content:"";position:absolute;left:2px;top:12px;width:5px;height:5px;border-radius:50%;background:var(--bar)}
+.card .acts{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px}
+.card .acts button,.card .acts a{display:inline-flex;align-items:center;gap:6px;height:44px;padding:0 16px;border:1px solid var(--link);background:#fff;color:var(--link);font-size:16px;font-weight:600;cursor:pointer}
+.card .acts button{background:var(--link);color:#fff}
+.tiles a:hover{box-shadow:0 3px 8px rgba(51,51,51,.3)}
+.tiles a svg,.fcard .dot,.ncard .dot,.circ{transition:transform .15s ease-out}
+.tiles a:hover svg,.fcard .foot:hover .dot,.ncard .foot:hover .dot,.card:hover .circ{transform:translateX(4px)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);max-width:calc(100% - 32px);background:var(--navy);color:#fff;padding:12px 20px;font-size:16px;line-height:24px;z-index:50;box-shadow:0 2px 8px rgba(0,0,0,.25)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.tiles a svg,.fcard .dot,.ncard .dot,.circ{transition:none}}
